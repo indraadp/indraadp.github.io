@@ -1,0 +1,7 @@
+User-agent: *
+User-agent: Mediapartners-Google
+
+Allow: /
+Disallow:
+
+Sitemap: https://indradp.web.id/sitemap.xml
