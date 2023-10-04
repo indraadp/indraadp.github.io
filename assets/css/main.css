@@ -115,9 +115,6 @@ h5 {
   border-color: #3706ea;
   transition: all 0.3s ease-in-out;
 }
-.cptitle {
-  margin-top: 0;
-}
 .icon-button {
   display: inline-block;
   vertical-align: -0.125em;
@@ -176,29 +173,16 @@ footer a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
-.carousel-inner {
-  padding: 1em;
+.owl-carousel {
+  max-width: 1100px;
+  display: flex;
+  margin: 0 auto;
 }
-.card {
-  margin: 0 0.5em;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-  border: none;
-}
-.card .img-wrapper {
-  max-height: 100%;
-}
-.card img {
-  max-height: 100%;
-  border-radius: 5px 5px 0 0;
-}
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: #0e0303;
-  width: 6vh;
-  height: 6vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
+.owl-carousel .card {
+  flex: 1;
+  margin: 0 10px;
+  height: 415px;
+  background: #ffffff;
 }
 @media (min-width: 768px) {
   .nav-link:hover::after {
@@ -218,28 +202,6 @@ footer a:hover {
     padding-top: 4rem !important;
   }
   .cptitle {
-    margin-top: 1rem !important;
-  }
-  .carousel-item {
-    margin-right: 0;
-    flex: 0 0 33.333333%;
-    display: block;
-  }
-  .carousel-inner {
-    display: flex;
-  }
-  .card .img-wrapper {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .card:hover {
-    filter: brightness(1.08);
-  }
-}
-@media (max-width: 767px) {
-  .carousel-inner {
-    padding: 0;
+    margin-top: 1.5rem !important;
   }
 }
