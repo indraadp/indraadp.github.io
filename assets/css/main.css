@@ -123,7 +123,7 @@ h5 {
   height: 1em;
 }
 .contact-info {
-  background: #ffffff;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,7 +146,7 @@ h5 {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 182, 0.45) !important;
 }
 .circle-icon {
-  background: #c0e2ff;
+  background-color: #c0e2ff;
   color: #003664;
   font-size: 30px;
   width: 50px;
@@ -181,8 +181,68 @@ footer a:hover {
 .owl-carousel .card {
   flex: 1;
   margin: 0 10px;
-  height: 415px;
-  background: #ffffff;
+  height: 410px;
+  background-color: #ffffff;
+}
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: -18px;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: -18px;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+  text-align: center;
+  margin-top: 15px;
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-nav {
+  margin-top: 10px;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+  color: #fff;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background-color: #d6d6d6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: none;
+  color: #3f3f3f;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px;
+}
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background-color: #d6d6d6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #0d6efd;
 }
 @media (min-width: 768px) {
   .nav-link:hover::after {
@@ -201,7 +261,12 @@ footer a:hover {
   .more {
     padding-top: 4rem !important;
   }
-  .cptitle {
+  .cp-title {
     margin-top: 1.5rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .cp-img {
+    margin-top: -15px !important;
   }
 }
