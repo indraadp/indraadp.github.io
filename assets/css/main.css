@@ -186,18 +186,18 @@ footer a:hover {
 }
 .owl-nav .owl-prev {
   position: absolute;
-  top: calc(50% - 25px);
+  top: calc(50% - 40px);
   left: -18px;
-  opacity: 1;
-  font-size: 30px !important;
+  opacity: 0.6;
+  font-size: 40px !important;
   z-index: 1;
 }
 .owl-nav .owl-next {
   position: absolute;
-  top: calc(50% - 25px);
+  top: calc(50% - 40px);
   right: -18px;
-  opacity: 1;
-  font-size: 30px !important;
+  opacity: 0.5;
+  font-size: 40px !important;
   z-index: 1;
 }
 .owl-theme .owl-dots,
@@ -221,7 +221,9 @@ footer a:hover {
 }
 .owl-theme .owl-nav [class*="owl-"]:hover {
   background-color: none;
-  color: #3f3f3f;
+  color: #0e0303;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 10px;
@@ -236,7 +238,6 @@ footer a:hover {
   margin: 5px 7px;
   background-color: #d6d6d6;
   display: block;
-  -webkit-backface-visibility: visible;
   transition: opacity 0.2s ease;
   border-radius: 30px;
 }
