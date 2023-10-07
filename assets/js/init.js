@@ -12,5 +12,7 @@ $(document).ready(function () {
       "<i class='fa-solid fa-circle-chevron-right'></i>",
     ],
   });
-  AOS.init();
+  AOS.init({
+    once: true,
+  });
 });
